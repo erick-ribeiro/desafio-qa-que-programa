@@ -1,0 +1,23 @@
+{
+  "name": "desafio-qa-que-programa",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Repositorio contendo as soluções para o \"Desafio QA Que Programa: 21 dias resolvendo desafios de programação\" utilizando Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo \"Error: no implement\" && exit 1",
+    "test": "standard && mocha '*/*.test.js'"
+  },
+  "author": "Erick Ribeiro",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^5.0.0",
+    "mocha": "^10.2.0",
+    "standard": "^17.1.0"
+  },
+  "standard": {
+    "env": [
+      "mocha"
+    ]
+  }
+}
