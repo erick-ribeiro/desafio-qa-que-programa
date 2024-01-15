@@ -1,11 +1,8 @@
-const readline = require('readline')
-const desafio0 = require('./desafio00/index.js')
-// const desafio1 = require('./desafio01');
-// const desafio2 = require('./desafio02');
-// const desafio3 = require('./desafio03');
-// const desafio4 = require('./desafio04');
+import { createInterface } from 'readline'
+import desafio0 from './desafio00/index.js'
 
-const rl = readline.createInterface({
+
+const rl = createInterface({
   input: process.stdin,
   output: process.stdout
 })

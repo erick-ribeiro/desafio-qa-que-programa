@@ -5,7 +5,7 @@
   "description": "Repositorio contendo as soluções para o \"Desafio QA Que Programa: 21 dias resolvendo desafios de programação\" utilizando Node.js",
   "main": "index.js",
   "scripts": {
-    "start": "echo \"Error: no implement\" && exit 1",
+    "start": "node index",
     "test": "standard && mocha '*/*.test.js'"
   },
   "author": "Erick Ribeiro",

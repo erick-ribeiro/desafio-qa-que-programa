@@ -12,8 +12,8 @@ Este repositório contém minhas soluções para o desafio "QA que Programa" uti
 Instruções sobre como clonar o repositório, instalar dependências e rodar o projeto.
 
 ```bash
-git clone [URL do repositório]
-cd [nome do repositório]
+git clone https://github.com/erick-ribeiro/desafio-qa-que-programa
+cd desafio-qa-que-programa
 npm install
 npm run start 
 ```
