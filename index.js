@@ -1,37 +1,38 @@
 import { createInterface } from 'readline'
-import desafio0 from './desafio00/index.js'
+import challenge00 from './desafio00/index.js'
+// TODO: Adicionar mais desafios aqui
+// import challenge01 from './desafio01/index.js'
+// import challenge02 from './desafio02/index.js'
+// ...
 
-
-const rl = createInterface({
+const readlineInterface = createInterface({
   input: process.stdin,
   output: process.stdout
 })
 
-const desafios = {
-  0: desafio0
-  //   '1': desafio1,
-  //   '2': desafio2,
-  //   '3': desafio3,
-  //   '4': desafio4
+const challenge = {
+  0: challenge00
+  // TODO: Adicionar mais desafios aqui
+  // '1': challenge01,
+  // '2': challenge02,
+  // ...
 }
 
-console.log('')
-console.log('Desafios Solucionados:')
-Object.keys(desafios).forEach(numero => {
-  console.log(` - Desafio ${numero}`)
+console.log('\nDesafios Solucionados:')
+Object.keys(challenge).forEach(number => {
+  console.log(` - Desafio ${number}`)
 })
 console.log('')
 
-rl.question('Qual desafio você quer executar? (Digite o número) ', (numero) => {
-  const desafioSelecionado = desafios[numero]
-  if (desafioSelecionado) {
-    console.log(`Executando Desafio ${numero} >>>`)
-    console.log('')
-    const resultado = desafioSelecionado()
-    console.log(resultado)
+readlineInterface.question('Qual desafio você quer executar? (Digite o número) ', (number) => {
+  const selectedChallenge = challenge[number]
+  if (selectedChallenge) {
+    console.log(`Executando Desafio ${number} >>>\n`)
+    const result = selectedChallenge()
+    console.log(result)
     console.log('')
   } else {
     console.log('Desafio não encontrado.')
   }
-  rl.close()
+  readlineInterface.close()
 })
