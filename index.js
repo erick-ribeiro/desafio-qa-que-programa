@@ -1,8 +1,7 @@
 import { createInterface } from 'readline'
 import challenge00 from './desafio00/index.js'
+import challenge01 from './desafio01/index.js'
 // TODO: Adicionar mais desafios aqui
-// import challenge01 from './desafio01/index.js'
-// import challenge02 from './desafio02/index.js'
 // ...
 
 const readlineInterface = createInterface({
@@ -11,10 +10,9 @@ const readlineInterface = createInterface({
 })
 
 const challenge = {
-  0: challenge00
+  0: challenge00,
+  1: challenge01
   // TODO: Adicionar mais desafios aqui
-  // '1': challenge01,
-  // '2': challenge02,
   // ...
 }
 
@@ -28,11 +26,15 @@ readlineInterface.question('Qual desafio você quer executar? (Digite o número)
   const selectedChallenge = challenge[number]
   if (selectedChallenge) {
     console.log(`Executando Desafio ${number} >>>\n`)
-    const result = selectedChallenge()
-    console.log(result)
-    console.log('')
+    if (number === '1') {
+      selectedChallenge(readlineInterface)
+    } else {
+      const result = selectedChallenge()
+      console.log(result)
+      readlineInterface.close()
+    }
   } else {
     console.log('Desafio não encontrado.')
+    readlineInterface.close()
   }
-  readlineInterface.close()
 })
