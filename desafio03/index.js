@@ -11,5 +11,6 @@ export default function challenge03 (readlineInterface) {
     } else {
       console.log(`A palavra ${textMaybe} NÃO é um Palindromo.`)
     }
+    readlineInterface.close()
   })
 }
