@@ -3,6 +3,8 @@ import challenge00 from './desafio00/index.js'
 import challenge01 from './desafio01/index.js'
 import challenge02 from './desafio02/index.js'
 import challenge03 from './desafio03/index.js'
+import challenge04 from './desafio04/index.js'
+
 // TODO: Adicionar mais desafios aqui
 // ...
 
@@ -15,7 +17,8 @@ const challenge = {
   0: challenge00,
   1: challenge01,
   2: challenge02,
-  3: challenge03
+  3: challenge03,
+  4: challenge04
   // TODO: Adicionar mais desafios aqui
   // ...
 }
